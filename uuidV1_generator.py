@@ -3,10 +3,6 @@
 from datetime import datetime, timezone
 import re
 import random
-
-def generate_random_string(length):
-    char = "abcdef0123456789"
-    return ''.join(random.choice(char) for _ in range(length))
     
 def macAddress_checker(m):
     mac_regex = r'^([0-9a-fA-F]{2}[:-]){5}([0-9a-fA-F]{2})$'
