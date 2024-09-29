@@ -81,9 +81,9 @@ def uuidv1_generator(dt,mac_address,variantAndCloqSeq=None) :
 		print(f"[!] Variant and cloq sequence parameter missing, generating a random one based on RFC 4122 'https://datatracker.ietf.org/doc/html/rfc4122#section-4.1.1' ...")
 		variantAndCloqSeq = clockSeqAndVariant_generator()
 		print(f"variant generated : {variantAndCloqSeq:04x} ")
-		print(f"{time_low:04x}-{time_mid:04x}-{time_high_version:04x}-{variantAndCloqSeq:04x}-{mac_address}")
+		print(f"uuid v1 generated : {time_low:04x}-{time_mid:04x}-{time_high_version:04x}-{variantAndCloqSeq:04x}-{mac_address}")
 	else : 
-		print(f"{time_low:04x}-{time_mid:04x}-{time_high_version:04x}-{variantAndCloqSeq}-{mac_address}")
+		print(f"uuid v1 generated : {time_low:04x}-{time_mid:04x}-{time_high_version:04x}-{variantAndCloqSeq}-{mac_address}")
 	return 
 
 
