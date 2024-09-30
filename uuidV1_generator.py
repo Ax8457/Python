@@ -25,7 +25,7 @@ def clockSeqAndVariant_generator():
 
 def variantAndClockSeq_Checker(h):
     if len(h) != 4:
-    	print("invalid length, had to be 4.")
+    	print("invalid length, has to be 4.")
     	return False 
   	
     try:
