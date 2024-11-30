@@ -13,9 +13,7 @@ def SNMPv3_compute_authKey(passwordGuess, msgAuthoritativeEngineID, hashAlgorith
     if not passwordGuess:
         return None
     string1 = SNMPv3_compute_String1(passwordGuess)
-    #print("	[+] PasswordGuess duplicated to match 1048576 bits size.")
     digest1 = hashlib.md5(string1.encode()).hexdigest()
-    #print(f"	[+] Digest1 ({hashAlgorithm}) computed : {digest1}")
     string2 = bytes.fromhex(digest1) + bytes.fromhex(msgAuthoritativeEngineID) + bytes.fromhex(digest1)
     authKey = hashlib.md5(string2).hexdigest()
     return authKey
