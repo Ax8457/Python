@@ -50,6 +50,7 @@ def SCRAMSHA1_Bruteforce_Password(target_b64Proof, rainbow_table, username, b64_
 if __name__ == "__main__":
     print("-" * 100)
     print("				SCRAMSHA1 / XMPP password bruteforce			")
+    print("        usage : python3 <script>.py <target proof> <rainbow table file> <user> <salt> <server Nonce> <client Nonce>                ")  
     print("-" * 100)
     target_b64Proof = sys.argv[1]
     rt = sys.argv[2]
@@ -59,18 +60,7 @@ if __name__ == "__main__":
     b64_clientNonce = sys.argv[6]
     SCRAMSHA1_Bruteforce_Password(target_b64Proof, rt, user, b64_salt, b64_serverNonce, b64_clientNonce, iterations=4096)
 
-
-
-
-
-
-
-
-
-
-
-
-
+#test python3 XMPPbis.py v0X8v3Bz2T0CJGbJQyF0X+HI4Ts= rttest.txt user QSXCR+Q6sek8bf92 3rfcNHYJY1ZVvWVs7j fyko+d2lbbFgONRv9qkxdawL
 
 
 
