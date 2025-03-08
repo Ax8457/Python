@@ -6,3 +6,5 @@ My python scripts
 **- APNG_delay.py :** Hidden messages can be embedded in _APNG file_ using delay values (the delay between the different frames being part of the animated _PNG_); contained in _fcTL chunks_. Hence this script is built to detect _fcTL_ chunks, to analyze its, and to decode (_ASCII)_ the eventual message hidden using _delay_num &/or delay_den_ values.  
 
 **- PNG_extractor.py :** This script is built to extract PNG from raw binary file. Based on PNG magic Bytes. 
+
+**- WindowsRegistryParser.py :** This script is built to parse windows hive dumps, ideally expect a .DAT file in input. /!\ The script isn't very stable for the moment.
